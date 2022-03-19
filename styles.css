@@ -1,0 +1,369 @@
+/***********Importes**********/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    margin:0px;
+    padding:0px;
+
+    background-color: hsl(348,93%,11%);
+}
+
+/***********Primera seccion de pokedex**********/
+.container-circles{
+    background-color: hsl(349,93%,44%);
+    height: 400px;
+    width: 100%;
+
+    border-top-left-radius: 5%;
+}
+/*Primer circulo*/
+.circle1{
+    background-color: hsl(180,99%,49%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    display: inline-block;
+
+    /*Estilo de borde*/
+    border-style: solid;
+    border-width: 1px;
+
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+/*Segundo circulo*/
+.circle2{
+    display: inline-block;
+    background-color: hsl(349,93%,44%);
+
+    margin-bottom: 10%;
+    margin-left: 1%;
+}
+
+/*Tercer circulo*/
+.circle3{
+    display: inline-block;
+    background-color: hsl(47,100%,50%);
+
+    margin-bottom: 10%;
+    margin-left: 1%;
+}
+
+/*Cuarto circulo*/
+.circle4{
+    display: inline-block;
+    background-color: hsl(108,99%,49%);
+    
+    margin-bottom: 10%;
+    margin-left: 1%;
+}
+
+.size-circles{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    /*Estilo de borde*/
+    border-style: solid;
+    border-width: 1px;
+
+    /*Posicion de circulo*/
+}
+
+/***********Segunda seccion de pokedex**********/
+.container-pokemon{
+    background-color: hsl(349,93%,44%);
+    height: 800px;
+    width: 100%;
+}
+
+.gray-container{
+    background-color: hsl(0,0%,69%);
+    height: 700px;
+    width: 80%;
+
+    /*Estilo de borde*/
+    border-style: solid;
+    border-width: 2px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+
+    /*Posicion del contenedor*/
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.pokemon{
+    background-color: white;
+    height: 600px;
+    width: 90%;
+
+    /*Estilo de borde*/
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5%;
+
+    /*Posicion del contenedor*/
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+/*Dando estilo a la pantalla del pokedex*/
+.container-pokemon-name-type{
+    display: block;
+}
+
+#pokeImg{
+    background-color: transparent;
+    display: block;
+    position: absolute;
+
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.container-pokemon-stats{
+    display: block;
+    margin-left: 55%;
+    margin-top: 25%;
+}
+
+/*Estilo de texto*/
+.input-pokeName{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+
+    width: 50%;
+    display: block;
+    position: absolute;
+    
+    /*Posicion*/
+    margin-top: 50px;
+    margin-left: 20%;
+
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+}
+
+.container-type{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    text-align: center;
+
+    display: block;
+    position: absolute;
+    
+    /*Posicion*/
+    margin-top: 12%;
+    margin-left: 26%;
+}
+
+.container-type label{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+}
+
+.container-type input{
+    font-family: 'Press Start 2P', cursive;
+
+    width: 50%;
+
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+}
+
+.container-stats{
+    margin-top: 2%;
+}
+
+.label-stats{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+
+    position: static;
+    margin-top: 15%;
+}
+
+.input-stats{
+    font-family: 'Press Start 2P', cursive;
+    
+    width: 100px;
+
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+}
+
+.input-pokemon input{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+}
+
+/***********Tercera seccion de pokedex**********/
+.container-features{
+    background-color: hsl(349,93%,44%);
+    height: 250px;
+    width: 100%;
+}
+
+.circle-features{
+    background-color: hsl(214,95%,65%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    display: inline-block;
+
+    /*Estilo de borde*/
+    border-style: solid;
+    border-width: 1px;
+
+    margin-left: 10%;
+}
+
+.height{
+    background-color: hsl(108,99%,49%);
+    width: 250px;
+    height: 60px;
+
+    display: inline-block;
+
+    /*Estilo de borde*/
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+
+    position: absolute;
+    margin-bottom: 50%;
+    margin-left: 2%;
+}
+
+.height-container{
+    margin-top: 8%;
+    margin-left: 7%;
+}
+
+.label-height-stat{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+}
+
+.input-height-stat{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+
+    width: 100px;
+
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+}
+
+.weight{
+    background-color: hsl(47,100%,50%);
+    width: 250px;
+    height: 60px;
+
+    display: inline-block;
+
+    /*Estilo de borde*/
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+
+    position: absolute;
+    margin-bottom: 50%;
+    margin-left: 23%;
+}
+
+.weight-container{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.label-weight-stat{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+}
+
+.input-weight-stat{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+
+    width: 100px;
+
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+}
+
+/***********Cuarta seccion de pokedex**********/
+.container-input-pokemon{
+    background-color: hsl(349,93%,44%);
+    height: 250px;
+    width: 100%;
+}
+
+.input-pokemon{
+    background-color: hsl(47,100%,50%);
+    height: 40%;
+    width: 60%;
+
+    /*Estilo de borde*/
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    border-color: white;
+
+    display: inline-block;
+
+    margin-left: 10%;
+
+    vertical-align: middle;
+}
+
+.input-pokemon input{
+    width: 100%;
+    height: 50%;
+
+    margin-top: 2%;
+
+    text-align: center;
+    font-size: 50px;
+
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+}
+
+.button{
+    background-color: hsl(359,58%,46%);
+    width: 150px;
+    height: 150px;
+
+    display: inline-block;
+
+    /*Estilo de borde*/
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 50%;
+
+    margin-left: 5%;
+
+    vertical-align: middle;
+}
+
+button{
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+}

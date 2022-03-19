@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2094/2094510.png">
+    <title>Pokedex</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+</head>
+<body>
+    <section class="container-circles">
+        <div class="circle1"></div>
+        <div class="circle2 size-circles position-circles"></div>
+        <div class="circle3 size-circles position-circles"></div>
+        <div class="circle4 size-circles position-circles"></div>
+    </section>
+    <section class="container-pokemon">
+        <div class="gray-container">
+            <div class="pokemon">
+                <div class="container-pokemon-name-type">
+                    <input class="input-pokeName" type="text" id="pokemonName" name="pokemonName" value="-------">
+                    <div class="container-type">
+                        <label>Type: </label>
+                        <input type="text" id="pokeType" name="pokeType" value="--">
+                    </div>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/640px-Pok%C3%A9_Ball_icon.svg.png" alt="Pokemon" id="pokeImg" width="350px">
+                <div class="container-pokemon-stats">
+                    <div class="container-stats">
+                        <label class="label-stats">Hp: </label>
+                       <input class="input-stats" type="text" id="pokeHP" name="pokeHP" value="--">
+                    </div>
+                    <br>
+                    <div class="container-stats">
+                        <label class="label-stats">Attack: </label>
+                        <input class="input-stats" type="text" id="pokeAttack" name="pokeAttack" value="--">
+                    </div>
+                    <br>
+                    <div class="container-stats">
+                        <label class="label-stats">Defense: </label>
+                        <input class="input-stats" type="text" id="pokeDefense" name="pokeDefense" value="--">
+                    </div>
+                    <br>
+                    <div class="container-stats">
+                        <label class="label-stats">Special-Attack: </label>
+                        <input class="input-stats" type="text" id="pokeSAttack" name="pokeSAttack" value="--">
+                    </div>
+                    <br>
+                    <div class="container-stats">
+                        <label class="label-stats">Special-Defense: </label>
+                        <input class="input-stats" type="text" id="pokeSDefense" name="pokeSDefense" value="--">
+                    </div>
+                    <br>
+                    <div class="container-stats">
+                        <label class="label-stats">Speed</label>
+                        <input class="input-stats" type="text" id="pokeSpeed" name="pokeSpeed" value="--"> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-features">
+        <div class="circle-features"></div>
+            <div class="height">
+                <div class="height-container">
+                    <label class="label-height-stat">Height: </label>
+                    <input class="input-height-stat" type="text" id="pokeHeight" name="pokeHeight" value="--">
+                </div>
+            </div>
+            <div class="weight">
+                <div class="weight-container">
+                    <label class="label-weight-stat">Weight: </label>
+                    <input class="input-weight-stat" type="text" id="pokeWeight" name="pokeWeight" value="--">
+                </div>
+            </div>
+        </section>
+    <section class="container-input-pokemon">
+        <div class="input-pokemon">
+            <input type="text" placeholder="Busca tu pokemon" id="pokeName" name="pokeName">
+        </div>
+        <div class="button">
+            <button onclick="fetchPokemon()"></button>
+        </div>
+    </section>    
+</body>
+<footer>
+    <script src='pokeapi.js'></script>
+</footer>
+</html>
